@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html>
+<head>
+    <title>Video Chat</title>
+    <style>
+
+        
+        #video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            gap: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="videocall-navbar">
+        <img src="./PATHSALALOGO.png.jpg" id="pathsalaimg" width="60" height="60">
+        <h1 class="pathsalatag">PATHSALA</h1>
+        <a href="home.html">Home</a>
+        <a href="chatbot.html">chatbot</a>
+        <a href="material.html">study materials</a>
+    </nav>
+    <div class="video-call-real">
+        <div>
+            <input type="text" id="roomId" placeholder="     Enter Room ID">
+            <button id="joinBtn">Join Room</button>
+        </div>
+        <div id="video-grid"></div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="main.js"></script>
+    </div>
+    <img src="chatbot.jpg" id="chatbotimg">
+
+    <div class="chatapp">
+        <div class="chatbox"></div>
+        <div class="inputbox"></div>                    
+    </div>
+
+    <iframe src="https://excalidraw.com/" frameborder="0" height="700px" width="925px"></iframe>
+    <iframe src="https://onlinenotepad.org/notepad" frameborder="0" class="notepad"  width="500px", height="500px"></iframe>
+    <footer>
+        <a href="https://www.instagram.com/sarada_prasad_swain/">Follow on instagram</a>
+        <p>&copy; 2025PATHSALA ALL COPYRIGHT reserved</p>
+    </footer>
+    
+    <script src="main.js"></script>    
+</body>
+</html>
+
+<!-- Chatbot Modal -->
