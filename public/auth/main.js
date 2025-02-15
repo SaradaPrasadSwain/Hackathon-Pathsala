@@ -1,16 +1,7 @@
-const nameInputSign = document.querySelector("#nameId1")
-const emailInputSign = document.querySelector("#nameId2")
-const passwordInputSign = document.querySelector("#nameId3")
-const signUpButton = document.querySelector(".signup-button");
+const submitButton = document.getElementById('submitButton');
 
-signUpButton.addEventListener("click", () => {
-    const nameValue = nameInputSign.value;
-    const emailValue = emailInputSign.value;
-    const passwordValue = passwordInputSign.value;
+submitButton.addEventListener('onclick', function(event){
+    event.preventDefault();
 
-    console.log("Name:", nameValue);
-    console.log("Email:", emailValue);
-    console.log("Password:", passwordValue);
+    window.location.href = '/index.html'
 })
-
-
