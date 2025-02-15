@@ -207,7 +207,6 @@ h2 {
 
 /* Back to Top Button */
 .back-to-top-btn {
-    position: fixed;
     bottom: 2rem;
     right: 2rem;
     background-color: #4CAF50;
